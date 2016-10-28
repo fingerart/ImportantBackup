@@ -2,5 +2,11 @@
 	name = FingerArt
 	email = fingerart.me@gmail.com
 [alias]
+	ci = commit	
+	
+	cl = clean
+
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	pushAll = "!f() { git add . && git commit -m \"$1\" && git push origin master; }; f"
+
+	ps = push
+	pa = "!f() { git add . && git commit -m \"$1\" && git push origin master; }; f"
